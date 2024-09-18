@@ -1,0 +1,98 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+/* Header Styles */
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+#Firstheading {
+    margin: 0;
+}
+
+/* Navigation Menu Styles */
+nav {
+    background-color: #333;
+}
+
+.Menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Menu img {
+    width: 50px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.Menu li {
+    margin: 0;
+}
+
+.Menu a {
+    text-decoration: none;
+    color: white;
+    padding: 15px 20px;
+    display: inline-block;
+}
+
+.Menu a:hover {
+    background-color: #575757;
+    border-radius: 4px;
+}
+
+/* Section Styles */
+section {
+    padding: 20px;
+    margin: 10px auto;
+    max-width: 800px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.calculator-inputs,
+.calculator-operations,
+.calculator-result {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="number"],
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+input[type="number"]:focus,
+input[type="text"]:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+.result p {
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+}
