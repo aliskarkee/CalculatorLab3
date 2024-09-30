@@ -1,55 +1,86 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Official Calculator</title>
-    <link rel="stylesheet" href="calculator.css" </head>
+    <link rel="stylesheet" href="calculator.css">
+</head>
 
 <body>
-
     <header>
-        <h1 id="Firstheading">Welcome to the Official Calculator</h1>
+        <h1>Welcome to the Official Calculator</h1>
     </header>
 
     <nav>
-        <ul class="Menu">
+        <ul class="menu">
             <li><img src="https://t4.ftcdn.net/jpg/04/26/76/67/360_F_426766720_z7Fnu0iQQ21C4GIRlfocNo15orUT0frq.jpg"
-                    alt="CalcLogo"></li>
-            <li class="background-3 first-item"><a href="#">Home</a></li>
-            <li class="background-3 second-item"><a href="#">About Us</a></li>
-            <li class="background-3 third-item"><a href="#">Services</a></li>
-            <li class="background-3 fourth-item"><a href="#">FAQs</a></li>
-            <li class="background-3 fifth-item"><a href="#">Contact Us</a></li>
+                    alt="CalcLogo" class="logo"></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Contact Us</a></li>
         </ul>
     </nav>
 
-    <section class="calculator-inputs">
-        <div class="first">
-            <label for="first-number">What is your first number?</label>
-            <input type="number" id="first-number" name="first-number">
-        </div>
+    <main>
+        <section class="calculator-inputs">
+            <div class="input-group">
+                <label for="first-number">What is your first number?</label>
+                <input type="number" id="first-number" name="first-number">
+            </div>
 
-        <div class="second">
-            <label for="second-number">What's the next number?</label>
-            <input type="number" id="second-number" name="second-number">
-        </div>
-    </section>
+            <div class="input-group">
+                <label for="second-number">What's the next number?</label>
+                <input type="number" id="second-number" name="second-number">
+            </div>
+        </section>
 
-    <section class="calculator-operations">
-        <div class="operator">
-            <label for="operations">What operation would you like to perform?</label>
-            <input type="text" id="operations" name="operations">
-        </div>
-    </section>
+        <section class="calculator-operations">
+            <div class="operator">
+                <label for="operations">Choose an operation:</label>
+                <button onclick="setOperation('+')">Add</button>
+                <button onclick="setOperation('-')">Subtract</button>
+                <button onclick="setOperation('*')">Multiply</button>
+                <button onclick="setOperation('/')">Divide</button>
+            </div>
+        </section>
 
-    <section class="calculator-result">
-        <div class="result">
-            <p>Your result will be displayed here</p>
-        </div>
-    </section>
+        <section class="calculator-result">
+            <div class="result">
+                <p>Your result will be displayed here</p>
+            </div>
+        </section>
+    </main>
 
+    <script src="calculator.js"></script>
+</body>
+
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+</head>
+
+<body>
+    <h1>Simple Calculator</h1>
+    <label for="first-number">First Number:</label>
+    <input type="number" id="first-number" name="first-number"><br>
+    <label for="second-number">Second Number:</label>
+    <input type="number" id="second-number" name="second-number"><br>
+    <label for="operation">Operation (+, -, *, /):</label>
+    <input type="text" id="operation" name="operation"><br>
+    <button onclick="calculateResult()">Calculate</button>
+    <p id="result-text">Your result will be displayed here</p>
+
+    <script src="calculator.js"></script>
 </body>
 
 </html>
